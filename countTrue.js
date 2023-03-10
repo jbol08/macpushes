@@ -11,3 +11,16 @@ function countTrue(arr) {
     }
     return count;
 }
+
+function countTrue(arr) {
+	//count how many times true appears in an array
+	//initialize a count of 0
+ let count = 0;
+	//go through array and check for true
+	let total = arr.filter(word => word === true)
+		//increment count everytime a true occurs
+	.reduce((accumulator, currentValue) => 
+	accumulator + currentValue,count);
+
+		return total
+}
